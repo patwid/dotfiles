@@ -1,0 +1,6 @@
+m http://localhost:8180/maps/login.xhtml
+mm http://localhost:4203/#/portal
+mp http://mapsp1as.datacenter-migros.ch:8080/maps/login.xhtml
+mq http://mapsq1as.datacenter-migros.ch:8080/maps/login.xhtml
+mmp https://mapsmobile.migros.net/client/loginportal/#/login
+mmq https://mapsmobileq.migros.net/client/loginportal/#/login

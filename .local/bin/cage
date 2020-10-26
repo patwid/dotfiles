@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# xkb_layout us
+# xkb_variant altgr-intl
+# xkb_options caps:swapescape
+# xkb_numlock enabled
+# repeat_delay 200
+# repeat_rate 30
+
+export XKB_DEFAULT_LAYOUT=us
+export XKB_DEFAULT_VARIANT=altgr-intl
+export XKB_DEFAULT_OPTIONS=caps:swapescape
+
+/usr/bin/cage "$@"

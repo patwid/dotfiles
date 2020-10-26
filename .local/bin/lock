@@ -1,0 +1,5 @@
+#!/bin/sh
+
+killall -SIGUSR1 dunst # suspend
+xset dpms force off && i3lock --nofork
+killall -SIGUSR2 dunst # resume

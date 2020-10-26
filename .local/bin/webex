@@ -1,0 +1,3 @@
+#!/bin/sh
+
+webapp https://web.webex.com/

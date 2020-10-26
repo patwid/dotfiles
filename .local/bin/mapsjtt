@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export PATH="/usr/lib/jvm/java-11-openjdk/bin/:$PATH"
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+cd ~/Projects/workspace1/zebra/migros.maps/maps-util/jtt/
+java -cp lib/estarter.jar ch.ergon.lib.app.starter.EStarter "$1"
