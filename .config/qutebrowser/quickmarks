@@ -4,3 +4,10 @@ mp http://mapsp1as.datacenter-migros.ch:8080/maps/login.xhtml
 mq http://mapsq1as.datacenter-migros.ch:8080/maps/login.xhtml
 mmp https://mapsmobile.migros.net/client/loginportal/#/login
 mmq https://mapsmobileq.migros.net/client/loginportal/#/login
+compass http://localhost:8280/zebra/login.xhtml
+compassp http://10.41.2.71/zebra/login.xhtml
+compassq http://10.41.2.72/zebra/login.xhtml
+nas http://192.168.0.3/ui/sessions/signin
+tm http://192.168.0.6:9091/transmission/web/
+stnas http://192.168.0.5:8384/
+st http://localhost:8384/

@@ -1,4 +1,3 @@
-set background=light
-set clipboard=unnamedplus
+source ~/.vimrc
+
 set laststatus=1
-set shortmess+=I

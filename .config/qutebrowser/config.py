@@ -10,6 +10,17 @@
 ##   qute://help/configuring.html
 ##   qute://help/settings.html
 
+from qutebrowser.api import interceptor
+
+def filter_yt(info: interceptor.Request):
+    """Block the given request if necessary."""
+    url = info.request_url
+    if (url.host() == "www.youtube.com" and url.path() == "/get_video_info"
+            and "&adformat=" in url.query()):
+        info.block()
+
+interceptor.register(filter_yt)
+
 ## This is here so configs done via the GUI are still loaded.
 ## Remove it to not load settings done via the GUI.
 # config.load_autoconfig()
@@ -1080,7 +1091,7 @@ c.fonts.default_family = ['sans-serif']
 
 ## Font used for the hints.
 ## Type: Font
-# c.fonts.hints = 'bold default_size default_family'
+c.fonts.hints = 'bold default_size monospace'
 
 ## Font used in the keyhint widget.
 ## Type: Font

@@ -201,8 +201,6 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     status_command i3status
@@ -219,6 +217,7 @@ input type:keyboard {
     xkb_variant altgr-intl
     xkb_options caps:swapescape
     xkb_numlock enabled
+
     repeat_delay 200
     repeat_rate 30
 }
@@ -235,7 +234,7 @@ focus_follows_mouse no
 
 seat * hide_cursor 5000
 
-titlebar_padding 2
+titlebar_padding 2 1
 
 bindsym button4 nop
 bindsym button5 nop
@@ -243,6 +242,7 @@ bindsym button5 nop
 bindsym $mod+Shift+Return exec cage -d -- $term
 
 bindsym $mod+p exec passmenu
+bindsym $mod+Tab exec sws
 
 bindsym --release Print exec grimshot --notify save output
 bindsym --release Shift+Print exec grimshot --notify save area
@@ -252,13 +252,5 @@ for_window [class="jetbrains-.*" title="win0"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
 for_window [class="Pavucontrol"] floating enable
 
-exec gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:'
-
-exec xrdb ~/.Xresources
-#exec xset s off
-#exec xset -dpms
-#exec xset r rate 200 30
-#exec setxkbmap -variant altgr-intl -option caps:swapescape
-#exec numlockx &
 exec mako
 exec gammastep
