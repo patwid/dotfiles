@@ -12,7 +12,7 @@
 
 ## This is here so configs done via the GUI are still loaded.
 ## Remove it to not load settings done via the GUI.
-config.load_autoconfig(True)
+config.load_autoconfig(False)
 
 ## Aliases for commands. The keys of the given dictionary are the
 ## aliases, while the values are the commands they map to.
@@ -1911,6 +1911,7 @@ ddg_opts = 'kae=b&kz=-1&kau=-1&kao=-1&kap=-1&kaq=-1&kax=-1&kak=-1&k1=-1'
 ## Type: Dict
 c.url.searchengines = {
     'DEFAULT': 'https://duckduckgo.com/?q={}&' + ddg_opts,
+    'a': 'https://jira.ergon.ch/browse/AXONLAB-{}',
     'aur': 'https://aur.archlinux.org/packages/?K={}',
     'aw': 'https://wiki.archlinux.org/?search={}',
     'g': 'https://www.google.com/search?hl=en&q={}',
@@ -2037,8 +2038,8 @@ c.url.start_pages = ['https://start.duckduckgo.com/?' + ddg_opts]
 # config.bind('F', 'hint all tab')
 # config.bind('G', 'scroll-to-perc')
 # config.bind('H', 'back')
-# config.bind('J', 'tab-next')
-# config.bind('K', 'tab-prev')
+config.bind('K', 'tab-next')
+config.bind('J', 'tab-prev')
 # config.bind('L', 'forward')
 # config.bind('M', 'bookmark-add')
 # config.bind('N', 'search-prev')
