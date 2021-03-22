@@ -2,6 +2,7 @@ if [ "$(tty)" = "/dev/tty1" ]; then
 	export PATH="$HOME/.local/bin:$PATH"
 	export EDITOR=vim
 	export GOPATH=~/.local/share/go
+	export IDEA_JDK=/usr/lib/jvm/java-11-openjdk
 	export MOZ_ENABLE_WAYLAND=1
 	export QT_QPA_PLATFORM=wayland
 	export QT_QPA_PLATFORMTHEME=qt5ct
