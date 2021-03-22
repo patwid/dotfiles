@@ -11,3 +11,10 @@ nas http://192.168.0.3/ui/sessions/signin
 tm http://192.168.0.6:9091/transmission/web/
 stnas http://192.168.0.5:8384/
 st http://localhost:8384/
+gamma https://jira.ergon.ch/secure/RapidBoard.jspa?rapidView=99&projectKey=AXONLAB&quickFilter=1234
+a http://localhost:8088/achilles/ar/login.html
+atest https://dev.axenita.ch/latest-master/login.html
+az https://smartaz.ergon.ch/#/
+cs https://direct.credit-suisse.com/dn/c/cls/auth
+pf https://www.postfinance.ch/ap/ba/fp/html/e-finance/home?login
+aa http://127.0.0.1:9091/achilles/ar/admin/login.jsp
