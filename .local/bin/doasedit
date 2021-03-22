@@ -1,0 +1,25 @@
+#!/bin/sh -eu
+
+file="$1"
+
+tmp="$(mktemp)"
+tmpcopy="$(mktemp)"
+trap 'rm -f "$tmp" "$tmpcopy"' EXIT HUP QUIT TERM INT ABRT
+
+if [ -f "$file" ] && [ ! -r "$file" ]; then
+	doas cat "$file" > "$tmp"
+else
+	cat "$file" > "$tmp"
+fi
+
+cat "$tmp" > "$tmpcopy"
+
+${EDITOR:-vi} "$tmp"
+
+if cmp -s "$tmp" "$tmpcopy"; then
+	echo >&2 "File unchanged"
+else
+	doas dd if="$tmp" of="$file" status=none
+fi
+
+rm "$tmp" "$tmpcopy"
