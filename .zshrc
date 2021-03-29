@@ -9,6 +9,9 @@ setopt HIST_IGNORE_ALL_DUPS
 
 bindkey -e
 
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
 alias ssh='TERM=xterm-256color ssh'
 alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias ls='ls --color=auto'
