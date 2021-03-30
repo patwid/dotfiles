@@ -10,9 +10,9 @@ RESET="$(tput sgr0)"
 
 branch_name()
 {
-	a=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
-	if [ -n "$a" ]; then
-		printf "${BLUE}git:(${RED}$a${BLUE}) "
+	local ref=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+	if [ -n "$ref" ]; then
+		printf "${BLUE}git:(${RED}$ref${BLUE}) "
 	else
 		printf ""
 	fi
