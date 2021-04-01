@@ -4,6 +4,10 @@
 HISTCONTROL='erasedups:ignorespace'
 HISTSIZE=10000
 
+#bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+bind '"\e[Z":menu-complete-backward'
+
 bold="\[$(tput bold)\]"
 red="\[$(tput setaf 1)\]"
 green="\[$(tput setaf 2)\]"
@@ -14,26 +18,23 @@ reset="\[$(tput sgr0)\]"
 
 git_info()
 {
-	local ref=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
-	if [ -n "$ref" ]; then
+	local branch_name=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+	if [ -n "$branch_name" ]; then
 		local state=''
 		# Check for uncommitted changes in the index.
 		if ! $(git diff --quiet --ignore-submodules --cached); then
 			state=' ✗';
-		fi;
 		# Check for unstaged changes.
-		if ! $(git diff-files --quiet --ignore-submodules --); then
+		elif ! $(git diff-files --quiet --ignore-submodules --); then
 			state=' ✗';
-		fi;
 		# Check for untracked files.
-		if [ -n "$(git ls-files --others --exclude-standard)" ]; then
+		elif [ -n "$(git ls-files --others --exclude-standard)" ]; then
 			state=' ✗';
-		fi;
 		# Check for stashed files.
-		if $(git rev-parse --verify refs/stash &> /dev/null); then
+		elif $(git rev-parse --verify refs/stash &> /dev/null); then
 			state=' ✗';
 		fi;
-		printf "${1}${ref}${2}${state} "
+		printf "${1}${branch_name}${2}${state} "
 	else
 		printf ""
 	fi
