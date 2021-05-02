@@ -206,8 +206,12 @@ bar {
     status_command i3status
     separator_symbol "  "
 
+    # Diable vertical scrolling (workspaces)
     bindsym button4 nop
     bindsym button5 nop
+    # Diable horizontal scrolling (workspaces)
+    bindsym button6 nop
+    bindsym button7 nop
 }
 
 include /etc/sway/config.d/*
@@ -236,21 +240,26 @@ seat * hide_cursor 5000
 
 titlebar_padding 2 1
 
+# Diable vertical scrolling (window tabs)
 bindsym button4 nop
 bindsym button5 nop
+# Diable horizontal scrolling (window tabs)
+bindsym button6 nop
+bindsym button7 nop
 
 bindsym $mod+Shift+Return exec cage -d -- $term
 
 bindsym $mod+p exec passmenu
-bindsym $mod+Tab exec sws
+
+bindsym $mod+Tab       workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 bindsym --release Print exec grimshot --notify save output
 bindsym --release Shift+Print exec grimshot --notify save area
 bindsym --release Ctrl+Print exec grimshot --notify save active
 
 for_window [class="jetbrains-.*" title="win0"] floating enable
-for_window [class="Nm-connection-editor"] floating enable
-for_window [class="Pavucontrol"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable, resize set 640 480
+for_window [app_id="pavucontrol"] floating enable, resize set 640 480
 
-exec mako
 exec gammastep
