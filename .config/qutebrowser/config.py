@@ -1040,7 +1040,7 @@ c.content.cookies.store = False
 ## Directory to save downloads to. If unset, a sensible OS-specific
 ## default is used.
 ## Type: Directory
-# c.downloads.location.directory = None
+c.downloads.location.directory = '/home/patwid/downloads/'
 
 ## Prompt the user for the download location. If set to false,
 ## `downloads.location.directory` will be used.
@@ -1912,11 +1912,11 @@ ddg_opts = 'kae=b&kz=-1&kau=-1&kao=-1&kap=-1&kaq=-1&kax=-1&kak=-1&k1=-1'
 c.url.searchengines = {
     'DEFAULT': 'https://duckduckgo.com/?q={}&' + ddg_opts,
     'a': 'https://jira.ergon.ch/browse/AXONLAB-{}',
+    'aw': 'https://intern.achilles-online.ch/jira/browse/AW-{}',
     'aur': 'https://aur.archlinux.org/packages/?K={}',
-    'aw': 'https://wiki.archlinux.org/?search={}',
+    'wa': 'https://wiki.archlinux.org/?search={}',
     'g': 'https://www.google.com/search?hl=en&q={}',
     'gh': 'https://github.com/search?q={}',
-    'm': 'https://jira.ergon.ch/browse/MAPS-{}',
     'mdn': 'https://developer.mozilla.org/en-US/search?q={}',
     'r': 'https://old.reddit.com/r/{}',
     'so': 'https://stackoverflow.com/search?q={}',
