@@ -16,8 +16,7 @@ blue="\[$(tput setaf 4)\]"
 cyan="\[$(tput setaf 6)\]"
 reset="\[$(tput sgr0)\]"
 
-git_info()
-{
+git_info() {
 	local branch_name=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
 	if [ -n "$branch_name" ]; then
 		local state=''
@@ -40,8 +39,7 @@ git_info()
 	fi
 }
 
-exit_code()
-{
+exit_code() {
 	if [[ $? == 0 ]]; then
 		printf "${1}"
 	else
