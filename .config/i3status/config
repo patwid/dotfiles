@@ -13,7 +13,7 @@ general {
 
 order += "load"
 order += "memory"
-order += "cpu_temperature 0"
+#order += "cpu_temperature 0"
 #order += "disk /"
 order += "path_exists VPN"
 order += "volume master"
@@ -24,6 +24,7 @@ order += "tztime time"
 load {
         format = ""
         format_above_threshold = "  %1min"
+        max_threshold = 16
 }
 
 memory {
