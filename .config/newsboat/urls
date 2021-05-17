@@ -1,0 +1,87 @@
+https://news.ycombinator.com/rss
+https://lobste.rs/rss
+
+# Query Feeds
+"query:Blogs:tags # \"blog\""
+"query:Podcasts:tags # \"podcast\""
+"query:Videos:tags # \"video\""
+
+# Blogs
+http://amacfie.github.io/atom.xml ! blog
+http://coding-geek.com/feed/ ! blog
+http://feed.svpino.com/ ! blog
+http://fingolfin.org/blog/blog.rss ! blog
+http://journal.stuffwithstuff.com/atom.xml ! blog
+http://neugierig.org/software/blog/atom.xml ! blog
+http://research.swtch.com/feed.atom ! blog
+http://seenaburns.com/feed.xml ! blog
+http://web.eecs.utk.edu/~azh/blog/feed.rss ! blog
+http://www.brendangregg.com/blog/rss.xml ! blog
+http://www.kroah.com/log/index.rss ! blog
+https://abe-winter.github.io/feed.xml ! blog
+https://alarmingdevelopment.org/?feed=rss2 ! blog
+https://blog.acolyer.org/feed/ ! blog
+https://blog.anp.lol/rss.xml ! blog
+https://blog.jse.li/index.xml ! blog
+https://blog.mgattozzi.dev/rss/ ! blog
+https://blog.petrzemek.net/feed/ ! blog
+https://brennan.io/blog/rss.xml ! blog
+https://chelseatroy.com/feed/ ! blog
+https://christine.website/blog.atom ! blog
+https://codewords.recurse.com/feed.xml ! blog
+https://commandcenter.blogspot.com/feeds/posts/default ! blog
+https://danluu.com/atom.xml ! blog
+https://dave.cheney.net/feed/atom ! blog
+https://drewdevault.com/blog/index.xml ! blog
+https://emersion.fr/blog/atom.xml ! blog
+https://etherealbits.com/feed/ ! blog
+https://feeds.feedburner.com/buckblog ! blog
+https://ferd.ca/feed.rss ! blog
+https://glouw.com/feed.xml ! blog
+https://gustedt.wordpress.com/feed/ ! blog
+https://jcs.org/rss ! blog
+https://michael.stapelberg.ch/feed.xml ! blog
+https://nibblestew.blogspot.com/feeds/posts/default ! blog
+https://notes.eatonphil.com/rss.xml ! blog
+https://nullprogram.com/feed/ ! blog
+https://os.phil-opp.com/rss.xml ! blog
+https://pliutau.com/index.xml ! blog
+https://rakyll.org/index.xml ! blog
+https://raphlinus.github.io/feed.xml ! blog
+https://stevelosh.com/rss.xml ! blog
+https://thorstenball.com/atom.xml ! blog
+https://tonsky.me/blog/atom.xml ! blog
+https://unixism.net/feed/ ! blog
+https://utcc.utoronto.ca/~cks/space/blog/?atom ! blog
+https://vermaden.wordpress.com/feed/ ! blog
+https://wordsandbuttons.online/rss ! blog
+https://www.arp242.net/feed.xml ! blog
+https://www.c0ffee.net/rss/ ! blog
+https://www.dannysalzman.com/feed.xml ! blog
+https://www.hjdskes.nl/blog/index.xml ! blog
+https://www.leidinger.net/blog/feed/ ! blog
+https://www.oblomovka.com/wp/feed/atom/ ! blog
+https://www.stephendiehl.com/feed.atom ! blog
+https://www.unixsheikh.com/feed.rss ! blog
+https://zserge.com/rss.xml ! blog
+
+#https://pixelhero.dev/blog/feed.xml ! blog
+#https://steveklabnik.com/feed ! blog
+
+# Podcasts
+https://2.5admins.com/feed/podcast ! podcast
+https://changelog.com/gotime/feed ! podcast
+https://feeds.fireside.fm/coder/rss ! podcast
+https://feeds.fireside.fm/extras/rss ! podcast
+https://feeds.fireside.fm/linuxactionnews/rss ! podcast
+https://feeds.fireside.fm/linuxunplugged/rss ! podcast
+https://feeds.fireside.fm/selfhosted/rss ! podcast
+https://latenightlinux.com/feed/extra ! podcast
+https://latenightlinux.com/feed/mp3 ! podcast
+
+# Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCwd5VFu4KoJNjkWJZMFJGHQ ! video youtube # Jacob Sorber
+https://www.youtube.com/feeds/videos.xml?channel_id=UC4UXU2ZkeAwEFlLv1Yt1UMQ ! video youtube # Martijn Bram
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8Md2_zOgvl_FUFn0JJpj1g ! video youtube # tek256
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrqM0Ym_NbK1fqeQG2VIohg ! video youtube # Tsoding VODs
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEbYhDd6c6vngsF5PQpFVWg ! video youtube # Tsoding
