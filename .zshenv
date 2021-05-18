@@ -1,4 +1,6 @@
+export BROWSER=qutebrowser
 export EDITOR=vim
+export TERMINAL=foot
 export GOPATH="$HOME/.local/share/go"
 export IDEA_JDK=/usr/lib/jvm/java-11-openjdk
 export NPM_CONFIG_PREFIX="$HOME/.local/share/node_modules"
