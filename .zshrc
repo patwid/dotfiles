@@ -24,12 +24,12 @@ autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-staged-changes true
 zstyle ':vcs_info:*' stagedstr   ' ✗'
-zstyle ':vcs_info:*' formats       "%F{blue}%s:(%F{red}%b%F{blue})%F{yellow}%c "
-zstyle ':vcs_info:*' actionformats "%F{blue}%s:(%F{red}%b%F{blue})%F{yellow}%c "
+zstyle ':vcs_info:*' formats       "%s:(%b)%c "
+zstyle ':vcs_info:*' actionformats "%s:(%b)%c "
 precmd() { vcs_info }
 
 setopt PROMPT_SUBST
-PROMPT='%(?:%F{green}:%F{red})➜  %B%F{cyan}%c ${vcs_info_msg_0_}%f%b'
+PROMPT='➜  %B%c ${vcs_info_msg_0_}%b'
 
 alias ssh='TERM=xterm-256color ssh'
 alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
