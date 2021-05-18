@@ -10,13 +10,15 @@ bind-key j next
 bind-key k prev
 bind-key J next-feed
 bind-key K prev-feed
+bind-key h quit
 bind-key j down article
 bind-key k up article
+bind-key l open
 bind-key J next article
 bind-key K prev article
 
 browser "setsid --fork $BROWSER >/dev/null 2>&1 %u"
 
-macro x set browser "setsid --fork mpv >/dev/null 2>&1 %u" ; open-in-browser ; set browser "setsid --fork $BROWSER >/dev/null 2>&1 %u"
+macro x set browser "setsid --fork umpv >/dev/null 2>&1 %u" ; open-in-browser ; set browser "setsid --fork $BROWSER >/dev/null 2>&1 %u"
 
 ignore-article "*" "title =~ \"Minimidi\""

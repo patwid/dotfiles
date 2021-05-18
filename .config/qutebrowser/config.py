@@ -2160,9 +2160,9 @@ config.bind('J', 'tab-prev')
 # config.bind('{{', 'navigate prev -t')
 # config.bind('}}', 'navigate next -t')
 
-config.bind(',X', 'hint --rapid links spawn --userscript umpv {hint-url}')
-config.bind('X', 'hint links spawn --userscript umpv {hint-url}')
-config.bind('x', 'spawn --userscript umpv {url}')
+config.bind(',X', 'hint --rapid links spawn umpv {hint-url}')
+config.bind('X', 'hint links spawn umpv {hint-url}')
+config.bind('x', 'spawn umpv {url}')
 
 ## Bindings for caret mode
 # config.bind('$', 'move-to-end-of-line', mode='caret')
