@@ -14,11 +14,11 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $launcher dmenu_path | fzf | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -69,7 +69,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+d exec $term --app-id menu sh -c '$launcher'
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -249,7 +249,7 @@ bindsym button7 nop
 
 bindsym $mod+Shift+Return exec cage -d -- $term
 
-bindsym $mod+p exec passmenu
+bindsym $mod+p exec $term --app-id menu passmenu
 
 bindsym $mod+Tab       workspace next
 bindsym $mod+Shift+Tab workspace prev
@@ -258,6 +258,7 @@ bindsym --release Print exec grimshot --notify save output
 bindsym --release Shift+Print exec grimshot --notify save area
 bindsym --release Ctrl+Print exec grimshot --notify save active
 
+for_window [app_id="^menu$"] floating enable, border pixel 2
 for_window [class="jetbrains-.*" title="win0"] floating enable
 for_window [app_id="nm-connection-editor"] floating enable, resize set 640 480
 for_window [app_id="pavucontrol"] floating enable, resize set 640 480
