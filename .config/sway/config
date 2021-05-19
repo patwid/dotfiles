@@ -18,7 +18,7 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $launcher dmenu_path | fzf | xargs swaymsg exec --
+set $launcher dmenu_path | menu | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -69,7 +69,7 @@ set $launcher dmenu_path | fzf | xargs swaymsg exec --
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $term --app-id menu sh -c '$launcher'
+    bindsym $mod+d exec $launcher
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
