@@ -1,0 +1,5 @@
+#!/bin/sh -eu
+
+prefix=~/.password-store/
+find "$prefix" -name '*.gpg' | sed -e "s,^$prefix,," -e 's/.gpg$//' | sort | 
+	menu | xargs pass show --clip

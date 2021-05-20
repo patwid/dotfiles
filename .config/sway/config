@@ -247,8 +247,7 @@ bindsym button5 nop
 bindsym button6 nop
 bindsym button7 nop
 
-set $passmenu passentries | menu | xargs pass show --clip
-bindsym $mod+p exec $passmenu
+bindsym $mod+p exec passmenu
 
 bindsym $mod+Tab       workspace next
 bindsym $mod+Shift+Tab workspace prev
