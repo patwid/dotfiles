@@ -5,7 +5,7 @@ st http://localhost:8384/
 gamma https://jira.ergon.ch/secure/RapidBoard.jspa?rapidView=99&projectKey=AXONLAB&quickFilter=1234
 a http://localhost:8088/achilles/ar/login.html
 lm https://dev.axenita.ch/latest-master/login.html
-az https://smartaz.ergon.ch/#/
+saz https://smartaz.ergon.ch/#/
 cs https://direct.credit-suisse.com/dn/c/cls/auth
 pf https://www.postfinance.ch/ap/ba/fp/html/e-finance/home?login
 aadm http://localhost:9091/achilles/ar/admin/login.jsp
@@ -17,3 +17,4 @@ ab https://dev.axenita.ch/latest-master-axon-baden/login.html
 at https://dev.axenita.ch/latest-master-axon-thun/login.html
 az https://dev.axenita.ch/latest-master-axon-zurich/login.html
 sui http://localhost:8088/achilles/swagger/index.html
+df https://github.com/patwid/dotfiles
