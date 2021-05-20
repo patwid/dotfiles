@@ -2255,9 +2255,13 @@ config.bind('J', 'tab-prev')
 # config.bind('{{', 'navigate prev -t')
 # config.bind('}}', 'navigate next -t')
 
-config.bind(',X', 'hint --rapid links spawn umpv {hint-url}')
-config.bind('X', 'hint links spawn umpv {hint-url}')
-config.bind('x', 'spawn umpv {url}')
+config.bind(',m', 'spawn --detach mpv --wayland-app-id=player {url}')
+config.bind(',M', 'hint links spawn --detach mpv --wayland-app-id=player {hint-url}')
+config.bind(';M', 'hint --rapid links spawn --detach mpv --wayland-app-id=player {hint-url}')
+
+config.bind(',u', 'spawn umpv --wayland-app-id=player {url}')
+config.bind(',U', 'hint links spawn umpv --wayland-app-id=player {hint-url}')
+config.bind(';U', 'hint --rapid links spawn umpv --wayland-app-id=player {hint-url}')
 
 ## Bindings for caret mode
 # config.bind('$', 'move-to-end-of-line', mode='caret')
