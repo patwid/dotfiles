@@ -1,10 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh -eu
 
-shopt -s nullglob globstar
-
-prefix=${PASSWORD_STORE_DIR-~/.password-store}
-password_files=( "$prefix"/**/*.gpg )
-password_files=( "${password_files[@]#"$prefix"/}" )
-password_files=( "${password_files[@]%.gpg}" )
-
-printf '%s\n' "${password_files[@]}"
+prefix=~/.password-store
+find "$prefix" -name '*.gpg' | sed -e 's,^'$prefix'/,,' -e 's/.gpg$//' | sort
