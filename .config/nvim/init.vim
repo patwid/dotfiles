@@ -1,9 +1,13 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
-source ~/.vimrc
+let g:netrw_banner=0
 
+set background=light
+set clipboard=unnamedplus
+set guicursor+=a:blinkon700
 set laststatus=1
+set shortmess+=I
 
 " https://github.com/neovim/neovim/blob/e75e9c10dc947bc4aac0aea927e47038bf984b7f/src/nvim/syntax.c#L5888
 if &background ==# "light"
