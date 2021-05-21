@@ -7,19 +7,19 @@ set laststatus=1
 
 " https://github.com/neovim/neovim/blob/e75e9c10dc947bc4aac0aea927e47038bf984b7f/src/nvim/syntax.c#L5888
 if &background ==# "light"
-	highlight ColorColumn ctermbg=Red guibg=Red
-	highlight DiffAdd ctermbg=Blue guibg=Blue
-	highlight DiffChange ctermbg=Magenta guibg=Magenta
-	highlight DiffDelete ctermbg=Cyan ctermfg=Blue gui=bold guifg=Blue guibg=Cyan
-	highlight Pmenu ctermbg=Magenta ctermfg=Black guibg=Magenta
-	highlight SpellBad ctermbg=Red guisp=Red gui=undercurl
-	highlight SpellCap ctermbg=Blue guisp=Blue gui=undercurl
-	highlight SpellRare ctermbg=Magenta guisp=Magenta gui=undercurl
+	highlight ColorColumn  ctermbg=Red
+	highlight DiffAdd      ctermbg=Blue
+	highlight DiffChange   ctermbg=Magenta
+	highlight DiffDelete   ctermbg=Cyan
+	highlight Pmenu        ctermbg=Magenta
+	highlight SpellBad     ctermbg=Red
+	highlight SpellCap     ctermbg=Blue
+	highlight SpellRare    ctermbg=Magenta
 else
-	highlight Directory ctermfg=Cyan guifg=Cyan
-	highlight MoreMsg ctermfg=Green gui=bold guifg=SeaGreen
-	highlight Question ctermfg=Green gui=bold guifg=Green
-	highlight SpecialKey ctermfg=Blue guifg=Cyan
-	highlight Title ctermfg=Magenta gui=bold guifg=Magenta
-	highlight WarningMsg ctermfg=Red guifg=Red
+	highlight Directory    ctermfg=Cyan
+	highlight MoreMsg      ctermfg=Green
+	highlight Question     ctermfg=Green
+	highlight SpecialKey   ctermfg=Blue
+	highlight Title        ctermfg=Magenta
+	highlight WarningMsg   ctermfg=Red
 endif
