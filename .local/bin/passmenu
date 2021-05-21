@@ -1,5 +1,5 @@
 #!/bin/sh -eu
 
-prefix=${PASSWORD_STORE_DIR-~/.password-store}/
-find "$prefix" -name '*.gpg' | sed -e "s,^$prefix,," -e 's/.gpg$//' | sort | 
+prefix=${PASSWORD_STORE_DIR-~/.password-store}
+find "$prefix" -name '*.gpg' | sed -e "s,^$prefix/,," -e 's/.gpg$//' | sort | 
 	menu | xargs pass show --clip
