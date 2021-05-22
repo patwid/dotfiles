@@ -17,6 +17,7 @@ augroup END
 function SetColors()
 	if &background ==# "dark"
 		highlight Directory ctermfg=cyan
+		highlight SpecialKey ctermfg=cyan
 		highlight Type ctermfg=green
 		highlight PreProc ctermfg=blue
 	endif
