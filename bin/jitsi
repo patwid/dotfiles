@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env --split-string=sh -eu
 
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 exec /usr/bin/jitsi

@@ -1,4 +1,4 @@
-#!/bin/sh -eu
+#!/usr/bin/env --split-string=sh -eu
 
 file="$1"
 

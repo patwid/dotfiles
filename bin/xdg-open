@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env --split-string=sh -eu
 
 case "${1%%:*}" in
 	http|https)
