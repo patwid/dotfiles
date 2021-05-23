@@ -26,4 +26,4 @@ ignore-article "*" "title =~ \"Minimidi\""
 
 color listfocus default default reverse
 color listfocus_unread default default bold reverse
-color info default default reverse
+color info default default bold
