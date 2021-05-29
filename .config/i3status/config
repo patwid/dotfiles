@@ -56,7 +56,7 @@ volume master {
 }
 
 ethernet _first_ {
-        format_up = " % ip (%speed)"
+        format_up = "  %ip (%speed)"
         format_down = "  down"
 }
 
