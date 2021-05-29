@@ -31,6 +31,5 @@ precmd() { vcs_info }
 setopt PROMPT_SUBST
 PROMPT='➜  %B%c ${vcs_info_msg_0_}%b'
 
-alias ssh='TERM=xterm-256color ssh'
 alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias ls='ls --color=auto'
