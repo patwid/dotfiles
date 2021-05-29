@@ -8,6 +8,7 @@ https://lobste.rs/rss
 
 # Blogs
 http://amacfie.github.io/atom.xml ! blog
+http://antirez.com/rss ! blog
 http://coding-geek.com/feed/ ! blog
 http://feed.svpino.com/ ! blog
 http://fingolfin.org/blog/blog.rss ! blog
@@ -40,6 +41,7 @@ https://ferd.ca/feed.rss ! blog
 https://glouw.com/feed.xml ! blog
 https://gustedt.wordpress.com/feed/ ! blog
 https://jcs.org/rss ! blog
+https://macwright.com/atom.xml ! blog
 https://michael.stapelberg.ch/feed.xml ! blog
 https://nibblestew.blogspot.com/feeds/posts/default ! blog
 https://notes.eatonphil.com/rss.xml ! blog
