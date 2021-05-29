@@ -20,7 +20,7 @@ bind-key K prev article
 browser "setsid --fork $BROWSER >/dev/null 2>&1 %u"
 
 macro m set browser "setsid --fork mpv --wayland-app-id=player >/dev/null 2>&1 %u" ; open-in-browser ; set browser "setsid --fork $BROWSER >/dev/null 2>&1 %u"
-macro u set browser "setsid --fork umpv >/dev/null 2>&1 %u" ; open-in-browser ; set browser "setsid --fork $BROWSER >/dev/null 2>&1 %u"
+macro u set browser "setsid --fork env MPV=\"mpv --wayland-app-id=player\" umpv >/dev/null 2>&1 %u" ; open-in-browser ; set browser "setsid --fork $BROWSER >/dev/null 2>&1 %u"
 
 ignore-article "*" "title =~ \"Minimidi\""
 
