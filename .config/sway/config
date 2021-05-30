@@ -248,9 +248,7 @@ bindsym button6 nop
 bindsym button7 nop
 
 bindsym $mod+p exec passmenu
-
-bindsym $mod+Tab       workspace next
-bindsym $mod+Shift+Tab workspace prev
+bindsym $mod+Tab exec windowswitcher
 
 bindsym --release Print exec grimshot --notify save output
 bindsym --release Shift+Print exec grimshot --notify save area
