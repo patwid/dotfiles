@@ -248,7 +248,7 @@ bindsym button6 nop
 bindsym button7 nop
 
 bindsym $mod+p exec passmenu
-bindsym $mod+Tab exec window-switcher
+bindsym $mod+Tab exec sway-window-switcher
 
 bindsym --release Print exec grimshot --notify save output
 bindsym --release Shift+Print exec grimshot --notify save area
