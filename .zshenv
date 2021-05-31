@@ -1,5 +1,6 @@
 export BROWSER=qutebrowser
 export EDITOR=vim
+export MENU=menu
 export TERMINAL=foot
 
 export TERM=xterm
