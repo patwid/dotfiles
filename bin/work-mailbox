@@ -1,3 +1,3 @@
 #!/usr/bin/env --split-string=sh -eu
 
-webapp https://mailbox.ergon.ch/
+chromium --app=https://mailbox.ergon.ch/

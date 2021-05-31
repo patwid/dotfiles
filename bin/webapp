@@ -1,3 +1,0 @@
-#!/usr/bin/env --split-string=sh -eu
-
-chromium --app="$@"
