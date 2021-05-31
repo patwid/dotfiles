@@ -250,9 +250,9 @@ bindsym button7 nop
 bindsym $mod+p exec passmenu
 bindsym $mod+Tab exec sway-window-switcher
 
-bindsym --release Print exec grimshot --notify save output
-bindsym --release Shift+Print exec grimshot --notify save area
-bindsym --release Ctrl+Print exec grimshot --notify save active
+bindsym --release Print exec sway-grimshot --notify save output
+bindsym --release Shift+Print exec sway-grimshot --notify save area
+bindsym --release Ctrl+Print exec sway-grimshot --notify save active
 
 for_window [app_id="^player$"] floating enable
 for_window [app_id="^menu$"] floating enable, border pixel 2
