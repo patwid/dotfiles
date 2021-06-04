@@ -13,7 +13,7 @@ augroup Colors
 	autocmd Syntax * call SetColors()
 augroup END
 
-function SetColors()
+function! SetColors() abort
 	if &background ==# "dark"
 		highlight Directory ctermfg=cyan
 		highlight SpecialKey ctermfg=cyan
