@@ -21,3 +21,6 @@ hn https://news.ycombinator.com/
 cp https://cockpit.ergon.ch/performance.lua
 libera https://libera.irclog.whitequark.org/
 oftc https://oftc.irclog.whitequark.org/
+sa https://status.axenita.dev/
+ga https://grafana.axenita.dev/
+lsa https://logsearch.axenita.dev/
