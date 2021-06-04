@@ -10,7 +10,7 @@ case "${1%%:*}" in
 	*.png|*.jpg)
 		exec imv "$1"
 		;;
-	*.mkv|*.mp4|*.flac)
+	*.mkv|*.mp3|*.flac)
 		exec mpv "$1"
 		;;
 	mailto)
