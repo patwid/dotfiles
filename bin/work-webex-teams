@@ -1,3 +1,0 @@
-#!/usr/bin/env --split-string=sh -eu
-
-qutebrowser --target window https://teams.webex.com/
