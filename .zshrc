@@ -26,6 +26,15 @@ zstyle ':vcs_info:*' check-for-staged-changes true
 zstyle ':vcs_info:*' stagedstr   ' ✗'
 zstyle ':vcs_info:*' formats       "%s:(%b)%c "
 zstyle ':vcs_info:*' actionformats "%s:(%b)%c "
+zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+
++vi-git-untracked(){
+    if [[ $(git rev-parse --is-inside-work-tree 2>/dev/null) == 'true' ]] && \
+        git status --porcelain | grep '??' &>/dev/null ; then
+        hook_com[staged]=' ✗'
+    fi
+}
+
 precmd() { vcs_info }
 
 setopt PROMPT_SUBST
