@@ -31,5 +31,5 @@ precmd() { vcs_info }
 setopt PROMPT_SUBST
 PROMPT='➜  %B%c ${vcs_info_msg_0_}%b'
 
-alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias dot='git --git-dir=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles --work-tree=$HOME'
 alias ls='ls --color=auto'
