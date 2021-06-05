@@ -22,20 +22,21 @@ bindkey -M menuselect '^J' down-line-or-history
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:*' check-for-staged-changes true
+zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr   ' ✗'
 zstyle ':vcs_info:*' formats       "%s:(%b)%c "
 zstyle ':vcs_info:*' actionformats "%s:(%b)%c "
-zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+zstyle ':vcs_info:git*+set-message:*' hooks git-unstaged
 
-+vi-git-untracked(){
-    if [[ $(git rev-parse --is-inside-work-tree 2>/dev/null) == 'true' ]] && \
-        git status --porcelain | grep '??' &>/dev/null ; then
++vi-git-unstaged() {
+    if [[ ! -z "${hook_com[unstaged]}" ]]; then
         hook_com[staged]=' ✗'
     fi
 }
 
-precmd() { vcs_info }
+precmd() {
+    vcs_info
+}
 
 setopt PROMPT_SUBST
 PROMPT='➜  %B%c ${vcs_info_msg_0_}%b'
