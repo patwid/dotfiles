@@ -23,19 +23,19 @@ bindkey -M menuselect '^J' down-line-or-history
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' stagedstr   ' ✗'
-zstyle ':vcs_info:*' formats       "%s:(%b)%c "
-zstyle ':vcs_info:*' actionformats "%s:(%b)%c "
+zstyle ':vcs_info:*' stagedstr ' ✗'
+zstyle ':vcs_info:*' formats '%s:(%b)%c '
+zstyle ':vcs_info:*' actionformats '%s:(%b)%c '
 zstyle ':vcs_info:git*+set-message:*' hooks git-unstaged
 
 +vi-git-unstaged() {
-    if [[ ! -z "${hook_com[unstaged]}" ]]; then
-        hook_com[staged]=' ✗'
-    fi
+	if [[ ! -z "${hook_com[unstaged]}" ]]; then
+		hook_com[staged]=' ✗'
+	fi
 }
 
 precmd() {
-    vcs_info
+	vcs_info
 }
 
 setopt PROMPT_SUBST
