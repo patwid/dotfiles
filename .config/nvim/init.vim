@@ -5,6 +5,7 @@ let g:netrw_banner=0
 
 set clipboard=unnamedplus
 set guicursor+=a:blinkon700
+set hidden
 set laststatus=1
 set shortmess+=I
 
