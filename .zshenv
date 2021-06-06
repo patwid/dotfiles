@@ -1,8 +1,7 @@
 export BROWSER=qutebrowser
 export EDITOR=vim
 export MENU=menu
-export TERM=xterm
-export TERMINAL=foot
+export TERM=foot
 
 export GOPATH="$HOME/.local/share/go"
 export GOPROXY=direct
