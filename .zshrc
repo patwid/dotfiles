@@ -29,7 +29,7 @@ zstyle ':vcs_info:*' actionformats '%s:(%b)%c '
 zstyle ':vcs_info:git*+set-message:*' hooks git-unstaged
 
 +vi-git-unstaged() {
-	if [[ ! -z "${hook_com[unstaged]}" ]]; then
+	if [[ -n "${hook_com[unstaged]}" ]]; then
 		hook_com[staged]=' ✗'
 	fi
 }
