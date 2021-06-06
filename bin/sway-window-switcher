@@ -103,7 +103,7 @@ CON_ID=$(swaymsg -t get_tree | \
            id: .apps.id, app_id: .apps.app_id, name: .apps.name }
         | $FORMAT
         | tostring" | \
-    $MENU)
+    "$MENU")
 
 # Requires the actual `id` to be at the end and between paretheses
 CON_ID=${CON_ID##*(}

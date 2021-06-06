@@ -2,4 +2,4 @@
 
 prefix=${PASSWORD_STORE_DIR-~/.password-store}
 find "$prefix" -name '*.gpg' | sed "s,^$prefix\(.*\)\.gpg$,\1," | sort |
-	$MENU | xargs pass show --clip
+	"$MENU" | xargs pass show --clip
