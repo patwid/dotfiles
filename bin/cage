@@ -1,4 +1,4 @@
-#!/usr/bin/env --split-string=sh -eu
+#!/bin/sh -eu
 
 # xkb_layout us
 # xkb_variant altgr-intl

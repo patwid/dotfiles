@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 ## Grimshot: a helper for screenshots within sway
 ## Requirements:

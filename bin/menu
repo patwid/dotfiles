@@ -1,4 +1,4 @@
-#!/usr/bin/env --split-string=sh -eu
+#!/bin/sh -eu
 
 in_pipe="$XDG_RUNTIME_DIR/menu-in.$$.pipe"
 out_pipe="$XDG_RUNTIME_DIR/menu-out.$$.pipe"
