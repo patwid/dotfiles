@@ -1,6 +1,6 @@
 auto-reload yes
 reload-threads 100
-text-width 72
+text-width 80
 show-keymap-hint no
 goto-next-feed no
 ignore-mode "display"
