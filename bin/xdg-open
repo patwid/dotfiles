@@ -2,7 +2,7 @@
 
 case "${1%%:*}" in
 	http|https)
-		exec qutebrowser "$1"
+		exec "$BROWSER" "$1"
 		;;
 	*.pdf)
 		exec zathura "$1"
