@@ -5,7 +5,7 @@ compinit
 
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=$HOME/.zsh_history
+HISTFILE="$HOME/.zsh_history"
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 
@@ -41,5 +41,5 @@ precmd() {
 setopt PROMPT_SUBST
 PROMPT='➜  %B%c ${vcs_info_msg_0_}%b'
 
-alias dot='git --git-dir=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles --work-tree=$HOME'
+alias dot="git --git-dir=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles --work-tree=$HOME"
 alias ls='ls --color=auto'
