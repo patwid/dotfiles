@@ -60,11 +60,9 @@ try:
     sock.connect(SOCK)
 except socket.error as e:
     if e.errno == errno.ECONNREFUSED:
-        sock = None
-        pass  # abandoned socket
+        sock = None  # abandoned socket
     elif e.errno == errno.ENOENT:
-        sock = None
-        pass # doesn't exist
+        sock = None  # doesn't exist
     else:
         raise e
 
