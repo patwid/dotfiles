@@ -1967,7 +1967,7 @@ c.tabs.mousewheel_switching = False
 ## Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 ## for a blank page.
 ## Type: FuzzyUrl
-# c.url.default_page = 'https://start.duckduckgo.com/'
+c.url.default_page = 'about:blank'
 
 ## URL segments where `:navigate increment/decrement` will search for a
 ## number.
@@ -1984,8 +1984,6 @@ c.tabs.mousewheel_switching = False
 ## invoked without parameters.
 ## Type: Bool
 # c.url.open_base_url = False
-
-ddg_opts = 'kae=b&kz=-1&kau=-1&kao=-1&kap=-1&kaq=-1&kax=-1&kak=-1&k1=-1'
 
 ## Search engines which can be used via the address bar.  Maps a search
 ## engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
@@ -2007,7 +2005,7 @@ ddg_opts = 'kae=b&kz=-1&kau=-1&kao=-1&kap=-1&kaq=-1&kax=-1&kak=-1&k1=-1'
 ## qutebrowser`.
 ## Type: Dict
 c.url.searchengines = {
-    'DEFAULT': 'https://duckduckgo.com/?q={}&' + ddg_opts,
+    'DEFAULT': 'https://duckduckgo.com/?q={}&kae=b&kz=-1&kau=-1&kao=-1&kap=-1&kaq=-1&kax=-1&kak=-1&k1=-1',
     'a': 'https://jira.ergon.ch/browse/AXONLAB-{}',
     'aur': 'https://aur.archlinux.org/packages/?K={}',
     'aw': 'https://intern.achilles-online.ch/jira/browse/AW-{}',
@@ -2027,7 +2025,7 @@ c.url.searchengines = {
 
 ## Page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = ['https://start.duckduckgo.com/?' + ddg_opts]
+c.url.start_pages = ['about:blank']
 
 ## URL parameters to strip with `:yank url`.
 ## Type: List of String
