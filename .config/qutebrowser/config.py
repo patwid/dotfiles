@@ -10,6 +10,8 @@
 ##   qute://help/configuring.html
 ##   qute://help/settings.html
 
+import os
+
 ## This is here so configs done via the GUI are still loaded.
 ## Remove it to not load settings done via the GUI.
 config.load_autoconfig(False)
@@ -1109,7 +1111,7 @@ c.content.cookies.store = False
 ## Directory to save downloads to. If unset, a sensible OS-specific
 ## default is used.
 ## Type: Directory
-c.downloads.location.directory = '/home/patwid/downloads/'
+c.downloads.location.directory = os.getenv('XDG_DOWNLOADS_DIR')
 
 ## Prompt the user for the download location. If set to false,
 ## `downloads.location.directory` will be used.
