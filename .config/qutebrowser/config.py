@@ -1746,7 +1746,7 @@ c.scrolling.smooth = True
 ##   - keypress: Display pressed keys when composing a vi command.
 ##   - progress: Progress bar for the current page loading.
 ##   - text:foo: Display the static text after the colon, `foo` in the example.
-c.statusbar.widgets = ['url']
+# c.statusbar.widgets = ['keypress', 'url', 'scroll', 'history', 'tabs', 'progress']
 
 ## Open new tabs (middleclick/ctrl+click) in the background.
 ## Type: Bool
