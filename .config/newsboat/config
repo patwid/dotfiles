@@ -19,8 +19,8 @@ bind-key K prev article
 
 browser "$BROWSER >/dev/null 2>&1 %u &"
 
-macro m set browser "mpv --wayland-app-id=player >/dev/null 2>&1 %u &" ; open-in-browser ; set browser "$BROWSER >/dev/null 2>&1 %u &"
-macro u set browser "env MPV=\"mpv --wayland-app-id=player\" umpv >/dev/null 2>&1 %u &" ; open-in-browser ; set browser "$BROWSER >/dev/null 2>&1 %u &"
+macro m set browser "mpv >/dev/null 2>&1 %u &" ; open-in-browser ; set browser "$BROWSER >/dev/null 2>&1 %u &"
+macro u set browser "umpv >/dev/null 2>&1 %u &" ; open-in-browser ; set browser "$BROWSER >/dev/null 2>&1 %u &"
 
 ignore-article "*" "title =~ \"Minimidi\""
 
