@@ -6,7 +6,7 @@ bg https://jira.ergon.ch/secure/RapidBoard.jspa?rapidView=99&projectKey=AXONLAB&
 a http://localhost:8088/achilles/ar/login.html
 aa http://localhost:22310/achilles/ar/login.html
 lm https://dev.axenita.ch/latest-master/login.html
-saz https://smartaz.ergon.ch/#/
+saz https://smartaz.ergon.ch/
 cs https://direct.credit-suisse.com/dn/c/cls/auth
 pf https://www.postfinance.ch/ap/ba/fp/html/e-finance/home?login
 adm http://localhost:9091/achilles/ar/admin/login.jsp
@@ -27,6 +27,6 @@ lsa https://logsearch.axenita.dev/
 mb https://mailbox.ergon.ch/
 mm https://mattermost.ergon.ch/
 s https://achillesweb.slack.com/
-saz https://smartaz.ergon.ch/
-w https://web.webex.ch/
-wm https://ergon.webex.ch/
+w https://web.webex.com/
+wm https://ergon.webex.com/
+skype https://web.skype.com/
