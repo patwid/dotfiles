@@ -776,7 +776,7 @@ c.completion.open_categories = ['quickmarks', 'bookmarks', 'history', 'filesyste
 
 ## Store cookies.
 ## Type: Bool
-c.content.cookies.store = False
+# c.content.cookies.store = True
 
 ## Default encoding to use for websites. The encoding must be a string
 ## describing an encoding such as _utf-8_, _iso-8859-1_, etc.
