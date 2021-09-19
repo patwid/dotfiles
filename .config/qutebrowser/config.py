@@ -295,6 +295,10 @@ config.load_autoconfig(False)
 ## Type: QssColor
 # c.colors.prompts.selected.bg = 'grey'
 
+## Foreground color for the selected item in filename prompts.
+## Type: QssColor
+# c.colors.prompts.selected.fg = 'white'
+
 ## Background color of the statusbar in caret mode.
 ## Type: QssColor
 # c.colors.statusbar.caret.bg = 'purple'
@@ -1011,6 +1015,14 @@ c.content.cookies.store = False
 ## Type: Bool
 # c.content.plugins = False
 
+## Request websites to minimize non-essentials animations and motion.
+## This results in the `prefers-reduced-motion` CSS media query to
+## evaluate to `reduce` (rather than `no-preference`). On Windows, if
+## this setting is set to False, the system-wide animation setting is
+## considered.
+## Type: Bool
+# c.content.prefers_reduced_motion = False
+
 ## Draw the background color and images also when the page is printed.
 ## Type: Bool
 # c.content.print_element_backgrounds = True
@@ -1057,6 +1069,7 @@ c.content.cookies.store = False
 ##   - ua-whatsapp
 ##   - ua-google
 ##   - ua-slack
+##   - ua-googledocs
 ##   - js-whatsapp-web
 ##   - js-discord
 ##   - js-string-replaceall
