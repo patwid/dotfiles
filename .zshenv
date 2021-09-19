@@ -2,6 +2,7 @@ export BROWSER=qutebrowser
 export EDITOR=vim
 export MENU=menu
 export TERM=foot
+export TERMCMD=foot
 
 xdg_data_home="$HOME/.local/share"
 export GOPATH="$xdg_data_home/go"
