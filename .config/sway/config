@@ -235,7 +235,6 @@ client.focused_inactive #5f676a #5f676a #ffffff #5f676a   #5f676a
 client.unfocused        #222222 #222222 #888888 #222222   #222222
 client.urgent           #900000 #900000 #ffffff #900000   #900000
 client.placeholder      #0c0c0c #0c0c0c #ffffff #0c0c0c   #0c0c0c
-
 client.background       #ffffff
 
 input type:keyboard {
@@ -255,12 +254,10 @@ input type:mouse {
 }
 
 font pango:sans-serif 9
-
 focus_follows_mouse no
-
 seat * hide_cursor 5000
-
 titlebar_padding 2 1
+default_border pixel 2
 
 # Diable vertical scrolling (window tabs)
 bindsym button4 nop
@@ -276,10 +273,10 @@ bindsym --release Print exec sway-grimshot --notify save output
 bindsym --release Shift+Print exec sway-grimshot --notify save area
 bindsym --release Ctrl+Print exec sway-grimshot --notify save active
 
-for_window [app_id="^menu$"] floating enable
-for_window [app_id="^mpv$"] floating enable
-for_window [app_id="^nm-connection-editor$"] floating enable, resize set 640 480
-for_window [app_id="^pavucontrol$"] floating enable, resize set 640 480
+for_window [app_id="^menu$"] floating enable, border normal
+for_window [app_id="^mpv$"] floating enable, border normal
+for_window [app_id="^nm-connection-editor$"] floating enable, resize set 640 480, border normal
+for_window [app_id="^pavucontrol$"] floating enable, resize set 640 480, border normal
 for_window [class="^jetbrains-.*$" title="^win0$"] floating enable
 
 exec wlsunset -l 47.3 -L 8.5
