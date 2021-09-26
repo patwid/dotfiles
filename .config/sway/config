@@ -273,7 +273,7 @@ bindsym --release Print exec sway-grimshot --notify save output
 bindsym --release Shift+Print exec sway-grimshot --notify save area
 bindsym --release Ctrl+Print exec sway-grimshot --notify save active
 
-for_window [app_id="^menu$"] floating enable, border normal
+for_window [app_id="^menu$"] floating enable
 for_window [app_id="^mpv$"] floating enable
 for_window [app_id="^nm-connection-editor$"] floating enable, resize set 640 480, border normal
 for_window [app_id="^pavucontrol$"] floating enable, resize set 640 480, border normal
