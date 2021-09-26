@@ -2,4 +2,4 @@
 
 /usr/bin/qutebrowser "$@"
 wait
-sqlite3 ~/.local/share/qutebrowser/webengine/Cookies "DELETE FROM cookies WHERE host_key NOT LIKE '%slack.com%' AND host_key NOT LIKE '%teams.microsoft.com%' AND host_key NOT LIKE '%ergon.ch%';"
+sqlite3 ~/.local/share/qutebrowser/webengine/Cookies "DELETE FROM cookies WHERE host_key NOT LIKE '%web.skype.com%' AND host_key NOT LIKE '%slack.com%' AND host_key NOT LIKE '%teams.microsoft.com%' AND host_key NOT LIKE '%ergon.ch%';"
