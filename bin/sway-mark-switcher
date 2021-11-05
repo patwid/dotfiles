@@ -1,0 +1,6 @@
+#!/bin/sh -eu
+
+mark="$(swaymsg -t get_marks | jq -r '.[]' | $MENU)"
+if [ -n $mark ]; then
+	swaymsg "[con_mark=^$mark$]" focus
+fi

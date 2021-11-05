@@ -269,6 +269,9 @@ bindsym button7 nop
 bindsym $mod+p exec passmenu
 bindsym $mod+Tab exec sway-window-switcher
 
+bindsym $mod+m exec dmenu </dev/null | xargs swaymsg mark
+bindsym $mod+g exec sway-mark-switcher
+
 bindsym --release Print exec sway-grimshot --notify save output
 bindsym --release Shift+Print exec sway-grimshot --notify save area
 bindsym --release Ctrl+Print exec sway-grimshot --notify save active
