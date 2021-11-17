@@ -1,10 +1,16 @@
-#!/bin/sh -eu
+#!/bin/sh -e
 
 export MOZ_ENABLE_WAYLAND=1
 export QT_QPA_PLATFORM=wayland
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export XCURSOR_THEME=Adwaita
 export XDG_CURRENT_DESKTOP=sway
 export XDG_SESSION_TYPE=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-ssh-agent sway >/dev/null 2>&1
+if [ -z $XDG_RUNTIME_DIR ]; then
+	export XDG_RUNTIME_DIR=/tmp/run/user/$(id -u)
+	mkdir -p $XDG_RUNTIME_DIR
+fi
+
+exec dbus-run-session ssh-agent sway >/dev/null 2>&1

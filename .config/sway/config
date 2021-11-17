@@ -283,3 +283,4 @@ for_window [app_id="^pavucontrol$"] floating enable, resize set 640 480, border 
 for_window [class="^jetbrains-.*$" title="^win0$"] floating enable
 
 exec wlsunset -l 47.3 -L 8.5
+exec dbus-update-activation-environment DISPLAY XAUTHORITY

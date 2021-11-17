@@ -18,13 +18,14 @@ order += "memory"
 order += "path_exists VPN"
 order += "volume master"
 #order += "ethernet _first_"
+order += "battery all"
 order += "tztime date"
 order += "tztime time"
 
 load {
         format = ""
         format_above_threshold = "  %1min"
-        max_threshold = 16
+        max_threshold = 4
 }
 
 memory {
@@ -58,6 +59,18 @@ volume master {
 ethernet _first_ {
         format_up = "  %ip (%speed)"
         format_down = "  down"
+}
+
+battery all {
+	format = "%status %percentage"
+	format_down = "No battery"
+	integer_battery_capacity = true
+	status_chr = "  "
+	status_bat = "  "
+	status_unk = "  "
+	status_full = "  "
+	path = "/sys/class/power_supply/BAT%d/uevent"
+	low_threshold = 10
 }
 
 tztime date {
