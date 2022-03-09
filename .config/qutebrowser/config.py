@@ -776,7 +776,7 @@ c.completion.open_categories = ['quickmarks', 'bookmarks', 'history', 'filesyste
 
 ## Store cookies.
 ## Type: Bool
-# c.content.cookies.store = True
+c.content.cookies.store = False
 
 ## Default encoding to use for websites. The encoding must be a string
 ## describing an encoding such as _utf-8_, _iso-8859-1_, etc.
@@ -2148,8 +2148,8 @@ c.url.start_pages = ['about:blank']
 # config.bind('F', 'hint all tab')
 # config.bind('G', 'scroll-to-perc')
 # config.bind('H', 'back')
-config.bind('K', 'tab-next')
-config.bind('J', 'tab-prev')
+# config.bind('J', 'tab-next')
+# config.bind('K', 'tab-prev')
 # config.bind('L', 'forward')
 # config.bind('M', 'bookmark-add')
 # config.bind('N', 'search-prev')

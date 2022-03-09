@@ -7,7 +7,6 @@ export TERMCMD=foot
 xdg_data_home="$HOME/.local/share"
 export GOPATH="$xdg_data_home/go"
 export GOPROXY=direct
-export IDEA_JDK=/usr/lib/jvm/java-11-openjdk
 export NPM_CONFIG_PREFIX="$xdg_data_home/node_modules"
 export PATH="$HOME/bin:$NPM_CONFIG_PREFIX/bin:$PATH"
 

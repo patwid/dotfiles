@@ -24,7 +24,7 @@ oftc https://oftc.irclog.whitequark.org/
 sa https://status.axenita.dev/
 ga https://grafana.axenita.dev/
 lsa https://logsearch.axenita.dev/
-mb https://mailbox.ergon.ch/
+mb https://outlook.office.com/mail/
 mm https://mattermost.ergon.ch/
 s https://achillesweb.slack.com/
 skype https://web.skype.com/
@@ -32,3 +32,4 @@ sw https://demo.axenita.ch/sanacare_winterthur/login.html
 sb https://demo.axenita.ch/sanacare_bern/login.html
 mt https://teams.microsoft.com/
 el https://axonlab.easylearn.ch/login
+ad https://axenita.dev/

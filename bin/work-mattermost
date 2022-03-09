@@ -1,3 +1,3 @@
 #!/bin/sh -eu
 
-qutebrowser --target=window https://mattermost.ergon.ch/
+chromium --app=https://mattermost.ergon.ch/

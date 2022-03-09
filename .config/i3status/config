@@ -23,41 +23,41 @@ order += "tztime time"
 
 load {
         format = ""
-        format_above_threshold = "  %1min"
+        format_above_threshold = "   %1min"
         max_threshold = 16
 }
 
 memory {
         format = ""
         threshold_degraded = "5G"
-        format_degraded = "  < %available"
+        format_degraded = "   < %available"
 }
 
 cpu_temperature 0 {
         format = ""
-        format_above_threshold = "  %degrees °C"
+        format_above_threshold = "   %degrees °C"
         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input"
 }
 
 disk "/" {
-        format = "  %free"
+        format = "   %free"
 }
 
 path_exists VPN {
-        format = "  VPN"
+        format = "   VPN"
         format_down = ""
         path = "/proc/sys/net/ipv4/conf/tun0"
 }
 
 volume master {
-        format = "  %volume"
-        format_muted = "  muted"
+        format = "   %volume"
+        format_muted = "   muted"
         device = "pulse"
 }
 
 ethernet _first_ {
-        format_up = "  %ip (%speed)"
-        format_down = "  down"
+        format_up = "   %ip (%speed)"
+        format_down = "   down"
 }
 
 tztime date {
